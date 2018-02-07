@@ -250,7 +250,8 @@ def mainloop():
                     next_py -= 1
                     plr.direction = 3
                 elif K_SPACE in keys:
-                    suicide = True
+                    pass
+                    #suicide = True
 
                 if fld.check_empty(next_px, next_py, ptype=True):
                     print(">>> player move!")

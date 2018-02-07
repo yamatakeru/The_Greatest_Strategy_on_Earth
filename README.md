@@ -1,0 +1,3 @@
+# The_Greatest_Strategy_on_Earth
+
+pythonとpygameによる自作レトロゲームです.

@@ -26,6 +26,8 @@ class Field(object):
             return False
         elif (self.goal_pos[0] == x and self.goal_pos[1] == y) and ptype != True:
             return False
+        elif self.field[y][x] == 4 and ptype != True:
+            return False
         else:
             return True
 
@@ -217,7 +219,7 @@ def mainloop():
 
         if state is State.Title:
             plr = Player(1, 1)
-            enms = [Enemy(FIELD_COL-2, FIELD_ROW-2, 2), Enemy(1, FIELD_ROW-2), Enemy(FIELD_COL-2, 1)]
+            enms = [Enemy(FIELD_COL-2, FIELD_ROW-2, 2), Enemy(1, FIELD_ROW-2, 2), Enemy(FIELD_COL-2, 1, 2)]
             blcks = []
             fld = Field(plr, enms)
 
